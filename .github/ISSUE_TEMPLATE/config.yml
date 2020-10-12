@@ -10,8 +10,8 @@ contact_links:
     url: https://status.npmjs.org
     about: Check the current status of the website/registry
   - name: 🗂 Documentation
-    url: https://preview-docs.npmjs.com/cli-commands/npm
-    about: Preview our new docs
+    url: https://docs.npmjs.com/
+    about: Read our docs
   - name: 📫 Support
     url: https://npm.community
     about: Links to other support options &/or community references
