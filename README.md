@@ -1,58 +1,54 @@
-npm(1) -- a JavaScript package manager
+npm - a package manager
 ==============================
 
-[![Build Status](https://img.shields.io/travis/npm/cli/latest.svg)](https://travis-ci.org/npm/cli)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/npm/cli/Node%20CI/latest) [![Coverage Status](https://coveralls.io/repos/github/npm/cli/badge.svg?branch=latest)](https://coveralls.io/github/npm/cli?branch=latest)
 
-## SYNOPSIS
+#### Requirements
 
-This is just enough info to get you up and running.
+- You need `node` v10 or higher to run this program
 
-Much more info will be available via `npm help` once it's installed.
-
-## IMPORTANT
-
-**You need node v6 or higher to run this program.**
-
-To install an old **and unsupported** version of npm that works on node v5
-and prior, clone the git repo and dig through the old tags and branches.
-
-**npm is configured to use npm, Inc.'s public registry at
-<https://registry.npmjs.org> by default.** Use of the npm public registry
-is subject to terms of use available at <https://www.npmjs.com/policies/terms>.
-
-You can configure npm to use any compatible registry you
+#### Acknowledgements
+- `npm` is configured to use the **npm public registry** at
+<https://registry.npmjs.org> by default. Use of the **npm public registry** is
+subject to terms of use available at <https://www.npmjs.com/policies/terms>
+- You can configure npm to use any compatible registry you
 like, and even run your own registry. Check out the [doc on
 registries](https://docs.npmjs.com/misc/registry).
 
-## Super Easy Install
+## Installation
 
-npm is bundled with [node](https://nodejs.org/en/download/).
+#### Node.js Project
 
-### Windows Computers
+`npm` is bundled with [`node`](https://nodejs.org/en/download/) by default. Most distributions of `node` should come with it out-of-the-box.
 
-[Get the MSI](https://nodejs.org/en/download/).  npm is in it.
+- [Mac](0)
+- [Windows]()
+- [Linux]()
+- [Others]()
 
-### Apple Macintosh Computers
+#### Direct Download
 
-[Get the pkg](https://nodejs.org/en/download/).  npm is in it.
+If you'd like to install `npm` directly from `npmjs.com`, you can download & run
+our `install.sh`:
 
-### Other Sorts of Unices
-
-Run `make install`.  npm will be installed with node.
-
-If you want a more fancy pants install (a different version, customized
-paths, etc.) then read on.
-
-## Fancy Install (Unix)
-
-There's a pretty robust install script at
-<https://www.npmjs.com/install.sh>.  You can download that and run it.
-
-Here's an example using curl:
-
-```sh
+```
 curl -L https://www.npmjs.com/install.sh | sh
 ```
+
+#### Node Version Managers
+
+If you're looking to manage multiple versions of `node` &/or `npm`, consider using projects such as:
+
+- [`nvm`]()
+- [`nvs`]()
+- [`nave`]()
+- [`n`]()
+- [`volta`]()
+
+### Development
+
+- Fork & clone this repo locally (ex. `git clone https://github.com/npm/cli.git`)
+- Run `make install`
 
 ### Slightly Fancier
 
@@ -87,12 +83,6 @@ upgrade tool](https://github.com/felixrieseberg/npm-windows-upgrade),
 or follow the Windows upgrade instructions in the
 [Installing/upgrading npm](https://npm.community/t/installing-upgrading-npm/251/2) post.
 
-If that's not fancy enough for you, then you can fetch the code with
-git, and mess with it directly.
-
-## Installing on Cygwin
-
-No.
 
 ## Uninstalling
 
@@ -106,8 +96,6 @@ Or, if that fails,
 ```sh
 sudo make uninstall
 ```
-
-## More Severe Uninstalling
 
 Usually, the above instructions are sufficient.  That will remove
 npm, but leave behind anything you've installed.
@@ -136,26 +124,17 @@ must remove them yourself manually if you want them gone.  Note that
 this means that future npm installs will not remember the settings that
 you have chosen.
 
-## More Docs
+### Resources
 
-Check out the [docs](https://docs.npmjs.com/).
+- [Bug Tracker](https://github.com/npm/cli/issues) - Search or submit bugs against the npm CLI or any of our other maintained OSS projects
+- [Documentation](https://docs.npmjs.com/) or `npm help` - The official API docs & how-tos for all things npm
+- [Roadmap](https://github.com/npm/roadmap) - Track & follow along with our public roadmap
+- [Feedback](https://github.com/npm/feedback) - Contribute ideas & discussion around the npm registry, website & CLI
+- [RFCs](https://github.com/npm/rfcs) - Contribute ideas & specifications for the API/design of the npm CLI
+- [Service Status](https://status.npmjs.org/) - Monitor the current status & see incident reports for the website & registry
+- [Project Status](https://npm.github.io/statusboard/) - See the health of all our maintained OSS projects in one view
+- [Public Events Calendar](https://calendar.google.com/calendar/u/0/embed?src=npmjs.com_oonluqt8oftrt0vmgrfbg6q6go@group.calendar.google.com) Keep track of our Open RFC calls, releases, meetups, conferences & more!
+- [Support](https://www.npmjs.com/support) Experiencing problems with the website or registry? File a ticket here
 
-You can use the `npm help` command to read any of them.
-
-If you're a developer, and you want to use npm to publish your program,
-you should [read this](https://docs.npmjs.com/misc/developers).
-
-## BUGS
-
-When you find issues, please report them:
-
-* web:
-  <https://npm.community/c/bugs>
-
-Be sure to include *all* of the output from the npm command that didn't work
-as expected.  The `npm-debug.log` file is also helpful to provide.
-
-## SEE ALSO
-
-* npm(1)
-* npm-help(1)
+### How-tos
+- [Developing & Publishing Packages](https://docs.npmjs.com/misc/developers)
