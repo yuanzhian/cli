@@ -22,7 +22,7 @@ const isWin = '../../../../lib/utils/is-windows.js'
 
 // snapshot these just so we note when they change
 t.matchSnapshot(Object.keys(definitions), 'all config keys')
-t.matchSnapshot(Object.keys(definitions).filter(d => d.flatten),
+t.matchSnapshot(Object.keys(definitions).filter(d => definitions[d].flatten),
   'all config keys that are shared to flatOptions')
 
 t.equal(definitions['npm-version'].default, pkg.version, 'npm-version default')

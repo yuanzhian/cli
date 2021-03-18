@@ -1,6 +1,12 @@
 const t = require('tap')
 const flatten = require('../../../../lib/utils/config/flatten.js')
 
+// flatten the defaults, just to get the set of keys
+const { defaults } = require('../../../../lib/utils/config/index.js')
+const flatDefaults = {}
+flatten(defaults, flatDefaults)
+t.matchSnapshot(Object.keys(flatDefaults), 'all flat option keys')
+
 require.main.filename = '/path/to/npm'
 delete process.env.NODE
 process.execPath = '/path/to/node'
