@@ -67,6 +67,7 @@ t.test('link to globalDir when in current working dir of pkg and no args', (t) =
   })
   npm.globalDir = resolve(testdir, 'global-prefix', 'lib', 'node_modules')
   npm.prefix = resolve(testdir, 'test-pkg-link')
+  npm.localPrefix = resolve(testdir, 'test-pkg-link')
 
   reifyOutput = async () => {
     reifyOutput = undefined
@@ -214,6 +215,7 @@ t.test('link global linked pkg to local nm when using args', (t) => {
   })
   npm.globalDir = resolve(testdir, 'global-prefix', 'lib', 'node_modules')
   npm.prefix = resolve(testdir, 'my-project')
+  npm.localPrefix = resolve(testdir, 'my-project')
 
   const _cwd = process.cwd()
   process.chdir(npm.prefix)
@@ -392,6 +394,7 @@ t.test('link pkg already in global space', (t) => {
   })
   npm.globalDir = resolve(testdir, 'global-prefix', 'lib', 'node_modules')
   npm.prefix = resolve(testdir, 'my-project')
+  npm.localPrefix = resolve(testdir, 'my-project')
 
   npm.config.find = () => 'default'
 
@@ -456,6 +459,7 @@ t.test('link pkg already in global space when prefix is a symlink', (t) => {
   })
   npm.globalDir = resolve(testdir, 'global-prefix', 'lib', 'node_modules')
   npm.prefix = resolve(testdir, 'my-project')
+  npm.localPrefix = resolve(testdir, 'my-project')
 
   npm.config.find = () => 'default'
 
