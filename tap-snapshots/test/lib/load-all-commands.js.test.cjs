@@ -213,6 +213,25 @@ Options:
 Run "npm help diff" for more info
 `
 
+exports[`test/lib/load-all-commands.js TAP load each command dist-tag > must match snapshot 1`] = `
+npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info
+`
+
 exports[`test/lib/load-all-commands.js TAP load each command docs > must match snapshot 1`] = `
 npm docs
 

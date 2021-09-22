@@ -6,11 +6,47 @@
  */
 'use strict'
 exports[`test/lib/dist-tag.js TAP add missing args > should exit usage error message 1`] = `
-TypeError: Cannot read properties of undefined (reading 'usage')
+Error: 
+Usage: npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info {
+  "code": "EUSAGE",
+}
 `
 
 exports[`test/lib/dist-tag.js TAP add missing pkg name > should exit usage error message 1`] = `
-TypeError: Cannot read properties of undefined (reading 'usage')
+Error: 
+Usage: npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info {
+  "code": "EUSAGE",
+}
 `
 
 exports[`test/lib/dist-tag.js TAP add new tag > should return success msg 1`] = `
@@ -23,11 +59,47 @@ dist-tag add 1.0.0 to @scoped/another@7.7.7
 `
 
 exports[`test/lib/dist-tag.js TAP borked cmd usage > should show usage error 1`] = `
-TypeError: Cannot read properties of undefined (reading 'usage')
+Error: 
+Usage: npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info {
+  "code": "EUSAGE",
+}
 `
 
 exports[`test/lib/dist-tag.js TAP ls global > should throw basic usage 1`] = `
-TypeError: Cannot read properties of undefined (reading 'usage')
+Error: 
+Usage: npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info {
+  "code": "EUSAGE",
+}
 `
 
 exports[`test/lib/dist-tag.js TAP ls in current package > should list available tags for current package 1`] = `
@@ -37,7 +109,25 @@ latest: 1.0.0
 `
 
 exports[`test/lib/dist-tag.js TAP ls on missing name in current package > should throw usage error message 1`] = `
-TypeError: Cannot read properties of undefined (reading 'usage')
+Error: 
+Usage: npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info {
+  "code": "EUSAGE",
+}
 `
 
 exports[`test/lib/dist-tag.js TAP ls on missing package > should log no dist-tag found msg 1`] = `
@@ -77,7 +167,25 @@ exports[`test/lib/dist-tag.js TAP remove existing tag > should return success ms
 `
 
 exports[`test/lib/dist-tag.js TAP remove missing pkg name > should exit usage error message 1`] = `
-TypeError: Cannot read properties of undefined (reading 'usage')
+Error: 
+Usage: npm dist-tag
+
+Modify package distribution tags
+
+Usage:
+npm dist-tag add <pkg>@<version> [<tag>]
+npm dist-tag rm <pkg> <tag>
+npm dist-tag ls [<pkg>]
+
+Options:
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
+
+alias: dist-tags
+
+Run "npm help dist-tag" for more info {
+  "code": "EUSAGE",
+}
 `
 
 exports[`test/lib/dist-tag.js TAP remove non-existing tag > should log error msg 1`] = `
