@@ -208,28 +208,9 @@ Options:
 [--diff-no-prefix] [--diff-src-prefix <path>] [--diff-dst-prefix <path>]
 [--diff-text] [-g|--global] [--tag <tag>]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help diff" for more info
-`
-
-exports[`test/lib/load-all-commands.js TAP load each command dist-tag > must match snapshot 1`] = `
-npm dist-tag
-
-Modify package distribution tags
-
-Usage:
-npm dist-tag add <pkg>@<version> [<tag>]
-npm dist-tag rm <pkg> <tag>
-npm dist-tag ls [<pkg>]
-
-Options:
-[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
-
-alias: dist-tags
-
-Run "npm help dist-tag" for more info
 `
 
 exports[`test/lib/load-all-commands.js TAP load each command docs > must match snapshot 1`] = `
@@ -243,7 +224,7 @@ npm docs [<pkgname> [<pkgname> ...]]
 Options:
 [--no-browser|--browser <browser>] [--registry <registry>]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 alias: home
 
@@ -293,7 +274,7 @@ Options:
 [--package <pkg>[@<version>] [--package <pkg>[@<version>] ...]]
 [-c|--call <call>]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 alias: x
 
@@ -421,7 +402,7 @@ npm init [<@scope>/]<name> (same as \`npx [<@scope>/]create-<name>\`)
 Options:
 [-y|--yes] [-f|--force]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 aliases: create, innit
 
@@ -661,7 +642,7 @@ npm pack [[<@scope>/]<pkg>...]
 Options:
 [--dry-run] [--json] [--pack-destination <pack-destination>]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help pack" for more info
 `
@@ -693,7 +674,7 @@ npm pkg delete <key> [<key> ...]
 Options:
 [-f|--force] [--json]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help pkg" for more info
 `
@@ -756,7 +737,7 @@ npm publish [<folder>]
 Options:
 [--tag <tag>] [--access <restricted|public>] [--dry-run] [--otp <otp>]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help publish" for more info
 `
@@ -790,7 +771,7 @@ npm repo [<pkgname> [<pkgname> ...]]
 Options:
 [--no-browser|--browser <browser>]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help repo" for more info
 `
@@ -833,8 +814,8 @@ npm run-script <command> [-- <args>]
 
 Options:
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces] [--if-present] [--ignore-scripts]
-[--script-shell <script-shell>]
+[-ws|--workspaces] [-iwr|--include-workspace-root] [--if-present]
+[--ignore-scripts] [--script-shell <script-shell>]
 
 aliases: run, rum, urn
 

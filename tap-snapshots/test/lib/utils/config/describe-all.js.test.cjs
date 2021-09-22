@@ -680,6 +680,19 @@ This is experimental, and not implemented by the npm public registry.
 <!-- automatically generated, do not edit manually -->
 <!-- see lib/utils/config/definitions.js -->
 
+#### \`include-workspace-root\`
+
+* Default: false
+* Type: Boolean
+
+Enable running a command in the context of the root package in addition to
+other worskpaces specfied with --workspace X or --workspaces.
+
+This value is not exported to the environment for child processes.
+
+<!-- automatically generated, do not edit manually -->
+<!-- see lib/utils/config/definitions.js -->
+
 #### \`init-author-email\`
 
 * Default: ""

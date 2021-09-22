@@ -149,6 +149,7 @@ Array [
   "which",
   "workspace",
   "workspaces",
+  "include-workspace-root",
   "yes",
 ]
 `
@@ -829,6 +830,18 @@ Allow installing "staged" published packages, as defined by [npm RFC PR
 #92](https://github.com/npm/rfcs/pull/92).
 
 This is experimental, and not implemented by the npm public registry.
+`
+
+exports[`test/lib/utils/config/definitions.js TAP > config description for include-workspace-root 1`] = `
+#### \`include-workspace-root\`
+
+* Default: false
+* Type: Boolean
+
+Enable running a command in the context of the root package in addition to
+other worskpaces specfied with --workspace X or --workspaces.
+
+This value is not exported to the environment for child processes.
 `
 
 exports[`test/lib/utils/config/definitions.js TAP > config description for init-author-email 1`] = `
