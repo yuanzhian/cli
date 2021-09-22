@@ -880,7 +880,7 @@ npm set-script [<script>] [<command>]
 
 Options:
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help set-script" for more info
 `
@@ -1032,7 +1032,7 @@ npm unpublish [<@scope>/]<pkg>[@<version>]
 Options:
 [--dry-run] [-f|--force]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 Run "npm help unpublish" for more info
 `
@@ -1083,7 +1083,7 @@ Options:
 [--allow-same-version] [--no-commit-hooks] [--no-git-tag-version] [--json]
 [--preid prerelease-id] [--sign-git-tag]
 [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 alias: verison
 
@@ -1100,7 +1100,7 @@ npm view [<@scope>/]<pkg>[@<version>] [<field>[.subfield]...]
 
 Options:
 [--json] [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-[-ws|--workspaces]
+[-ws|--workspaces] [-iwr|--include-workspace-root]
 
 aliases: v, info, show
 

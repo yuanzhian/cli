@@ -939,7 +939,7 @@ All commands:
                     
                     Options:
                     [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-                    [-ws|--workspaces]
+                    [-ws|--workspaces] [-iwr|--include-workspace-root]
                     
                     Run "npm help set-script" for more info
 
@@ -1071,7 +1071,7 @@ All commands:
                     Options:
                     [--dry-run] [-f|--force]
                     [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-                    [-ws|--workspaces]
+                    [-ws|--workspaces] [-iwr|--include-workspace-root]
                     
                     Run "npm help unpublish" for more info
 
@@ -1116,7 +1116,7 @@ All commands:
                     [--allow-same-version] [--no-commit-hooks] [--no-git-tag-version] [--json]
                     [--preid prerelease-id] [--sign-git-tag]
                     [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-                    [-ws|--workspaces]
+                    [-ws|--workspaces] [-iwr|--include-workspace-root]
                     
                     alias: verison
                     
@@ -1131,7 +1131,7 @@ All commands:
                     
                     Options:
                     [--json] [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-                    [-ws|--workspaces]
+                    [-ws|--workspaces] [-iwr|--include-workspace-root]
                     
                     aliases: v, info, show
                     
